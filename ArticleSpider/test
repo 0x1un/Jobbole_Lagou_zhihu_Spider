@@ -1,0 +1,13 @@
+CREATE TABLE article_spider (
+      title varchar(200) NOT NULL,
+      create_date date,
+      url varchar(300) NOT NULL,
+      url_object_id varchar(50) NOT NULL,
+      front_image_url varchar(300),
+      front_image_path varchar(200),
+      comment_nums int(11) NOT NULL DEFAULT 0,
+      fav_nums int(11) NOT NULL DEFAULT 0,
+      praise_nums int(11) NOT NULL DEFAULT 0,
+      tags varchar(200),
+      content longtext NOT NULL
+  )engine=innodb default character set utf8;
